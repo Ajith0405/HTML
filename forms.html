@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Contact Me</h2>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Details :</legend>
+        <label for="fName">First Name : </label>
+        <input type="text" name="fName" id="fName" placeholder="Enter First Name" autocomplete="on" autofocus
+            required />
+        <br />
+        <br />
+        <label for="lName">Last Name : </label>
+        <input type="text" name="lName" id="lName" placeholder="Enter Last Name" autocomplete="on" required />
+        <br />
+        <br />
+
+        <label for="age">Age : </label>
+        <input type="number" name="age" id="age" placeholder="Enter Your Age" />
+        <br />
+        <br />
+
+        <label for="pswd">Enter Password : </label>
+        <input type="password" name="pswd" id="pswd" placeholder="Enter Your Password" required />
+        <br />
+        <br />
+
+        <label for="phone">Phone Number : </label>
+        <input type="tel" name="phone" id="phone" placeholder="987-654-3210" required
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" />
+        <br />
+        <br />
+
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender" id="Male" value="Male" />
+        <span>Male</span>
+        <input type="radio" name="gender" id="Fe-Male" value="Fe-Male" /><span>Female</span>
+        <br />
+        <br />
+
+        <label for="decade">Select Your Decade : </label>
+        <input type="number" name="decade" id="decade" min="1950" max="2020" value="1980" step="10" />
+        <br />
+        <br>
+
+        <label for="address"> Address : </label>
+        <textarea name="address" id="address" cols="30" rows="6"></textarea>
+        
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>Professional Details : </legend>
+    
+        <label for="favLan">Favourate Language</label>
+        <select name="favLan" id="favLan">
+            <option value="">--select--</option>
+            <optgroup label="Programming Language">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                <option value="C">C</option>
+            </optgroup>
+            <optgroup label="Web Technology">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Bootstrap">Bootstrap</option>
+                <option value="JavaScript">JavaScript</option>
+            </optgroup>
+            <optgroup label=" Frame-work">
+                <option value="React">React</option>
+                <option value="Angular">Angular</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <label for="favdom"> Favourate Domine : </label>
+        <input type="text" name="favdom" id="favdom" list="favdom-list" placeholder="--Enter--">
+        <datalist id="favdom-list">
+            <option value="Front-End">
+            <option value="Back-End"> 
+            <option value="Server">
+        </datalist>
+        <br>
+        <br>
+        <label for="exp">Exprience : </label>
+        <input type="text" name="exp" id="exp" placeholder="Enter Exprience" list="exp-list">
+        <datalist id="exp-list" >
+            <option value="1 Year">
+            <option value="2 Years">
+            <option value="3 Years">
+        </datalist>
+
+        <br>
+        <br>
+        <label for="Summary"> Summary : </label>
+        <textarea name="Summary" id="Summary" cols="30" rows="6"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Terms & Conditions : </legend>
+        <input type="checkbox" name="terms" id="terms"> <span>I hereby declare that all the information given above is true and correct to the best of my knowledge.</span>
+    </fieldset>
+        <br/>
+        <br/>
+        <button type="submit">Submit</button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="reset"> Reset</button>
+    </form>
+</body>
+
+</html>

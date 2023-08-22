@@ -31,7 +31,8 @@ hr{
 }
 a{
     text-decoration: none;
-    color: inherit;  
+    color: inherit; 
+    font-size: 16px;
     display: block;
     padding: 10px 20px;
     transform: skew(+25deg);

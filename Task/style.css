@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;    
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/bike2.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.header{
+    background: #2d3436;
+    height: 13vh;
+    width: 100vw;
+    position: absolute;
+    border-bottom: 2px solid gainsboro;
+    
+}
+hr{
+    margin-top: 12px;
+    border-bottom: 2px solid gainsboro;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;  
+    display: block;
+    padding: 10px 20px;
+    transform: skew(+25deg);
+}
+ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    transform: skew(-25deg);
+}
+.logo{
+    position: absolute; 
+    bottom: 1px;
+    left: 20px;
+}
+.logo img {
+    background-color: #2d3436;
+   position: relative;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-top: 38px;
+    margin-right: 30px;
+}
+.navbar ul li{
+    background-color:#fff;
+    float: left;
+    border-right: 1px solid darkgray;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0,0,0,1);
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 400;
+    transition: all 0.2s linear;
+    
+}
+.navbar ul li:first-child{
+    border-radius: 9px 0 0 9px ;
+}
+.navbar ul li:last-child{
+    border-radius: 0 9px 9px 0 ;
+    background-color: yellowgreen;
+}
+.navbar ul li:hover{
+    background-color: #0984e3;
+    color: white;
+}
+
+.navbar ul li:last-child:hover{
+    background-color: orangered;
+    color: black;
+}
+footer{
+    height: 20vh;
+    width: 100vw;
+    background-color: #2d3436;
+
+}
+footer table{
+    width: 100%;
+}
+footer table tr,th,td{
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+.content{
+    color: gainsboro;
+    position: relative;
+    position: fixed;
+    top: 150px;
+    left: 12px;
+    
+}
+
+@media (max-width: 768px)  {
+    body{
+        font-family: 'Poppins',sans-serif;
+    }
+    #main{
+        width: 100vw;
+        height: 100vh;
+        background-image: url('images/bike2.jpg');
+        background-attachment: fixed;
+        background-size:cover;
+        background-position: 30%;
+    }
+    
+    .header{
+        background: #2d3436;
+        height: 16vh;
+        width: 100vw;
+        position: absolute;
+        border-bottom: 2px solid gainsboro;
+        z-index: +1;
+        
+    }
+    hr{
+        margin-top: 8px;
+        border-bottom: 2px solid gainsboro;
+        position: relative;
+        z-index: +1;
+        
+    }
+    a{
+        text-decoration: none;
+        color: inherit;  
+        display: block;
+        padding: 2px 3px;
+        transform: skew(+25deg);
+    }
+    ul li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        transform: skew(-25deg);
+    }
+    .logo{
+        position: absolute;
+       
+    }
+    .logo img {
+        background-color: #2d3436;
+       position: relative;
+       bottom: 20px;
+    }
+    .navbar{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        margin-top: 70px;
+        margin-right: 35px;
+    }
+    .navbar ul li{
+        background-color:#fff;
+        float: left;
+        border-right: 1px solid darkgray;
+        box-shadow: 1.95px 1.95px 2.6px rgba(0,0,0,1);
+        text-transform: uppercase;
+        color: #555;
+        font-weight: 400;
+        transition: all 0.2s linear;
+        
+    }
+    .navbar ul li:first-child{
+        border-radius: 9px 0 0 9px ;
+    }
+    .navbar ul li:last-child{
+        border-radius: 0 9px 9px 0 ;
+        background-color: yellowgreen;
+    }
+    .navbar ul li:hover{
+        background-color: #0984e3;
+        color: white;
+    }
+    
+    .navbar ul li:last-child:hover{
+        background-color: orangered;
+        color: black;
+    }
+    footer{
+        height: 20vh;
+        width: 100vw;
+        background-color: #2d3436;
+    
+    }
+    footer table{
+        width: 100%;
+    }
+    footer table tr,th,td{
+        padding: 10px;
+        color: aliceblue;
+        text-align: center;
+        
+    }
+    .content{
+        color: gainsboro;
+        position: relative;
+        position: fixed;
+        top: 150px;
+        left: 12px;
+        
+    }
+    p{
+        font-size: 10px;
+    }
+    
+}

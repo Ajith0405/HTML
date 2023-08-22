@@ -110,7 +110,7 @@ footer table tr,th,td{
     
 }
 
-@media screen and (max-width: 760px)  {
+@media screen and (max-width: 480px)  {
     body{
         font-family: 'Poppins',sans-serif;
     }
@@ -127,7 +127,7 @@ footer table tr,th,td{
     
     .header{
         background: #2d3436;
-        height: 7vh;
+        height: 10vh;
         width: 100vw;
         position: absolute;
         border-bottom: 2px solid gainsboro;

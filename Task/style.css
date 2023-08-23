@@ -19,9 +19,10 @@ body{
 }
 .header{
     background: #2d3436;
-    height: 13vh;
+    height: 10vh;
     width: 100vw;
-    position: absolute;
+    position: sticky;
+    top: 0px;
     border-bottom: 1px solid gainsboro;   
 }
 a{
@@ -39,13 +40,10 @@ ul li {
 }
 .logo{
     position: absolute; 
-    bottom: 1px;
     left: 20px;
+    top: -25px;
 }
-.logo img {
-    background-color: #2d3436;
-   position: relative;
-}
+
 .navbar{
     position: relative;
     display: flex;
@@ -131,7 +129,8 @@ footer{
         height: 14vh;
         width: 100vw;
         position: absolute;
-        border-bottom: 2px solid gainsboro; 
+        border-bottom: 2px solid gainsboro;
+        
     }
     
     a{
@@ -146,13 +145,13 @@ footer{
         list-style: none;
         display: flex;
         transform: skew(-25deg);
+        
     }
     .logo{
         position: absolute;
        
     }
     .logo img {
-        background-color: #2d3436;
        position: relative;
        bottom: 25px;
        width: 25vw;
@@ -162,9 +161,9 @@ footer{
     .navbar{
         position: relative;
         top: 40px;
-        left: 10px;
         display: flex;
         justify-content:center;
+    
         
         
     }

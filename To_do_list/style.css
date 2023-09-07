@@ -44,6 +44,12 @@ h2{
     border-top: 3px solid #F0F0F0;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #inputBox{
     position: relative;
     width: 100%;
